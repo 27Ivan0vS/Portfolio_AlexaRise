@@ -1,0 +1,557 @@
+/* inter-regular - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/inter-v11-latin-regular.woff2") format("woff2"),
+    /*src\fonts\inter-v11-latin/inter-v11-latin-regular.woff2*/
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/inter-v11-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/inter-v11-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/inter-v11-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-700 - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/merriweather-v30-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/merriweather-v30-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles start*/
+
+.header {
+  height: 90px;
+  position: absolute;
+  /*position: fixed; fixed header*/
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item {
+  margin-right: 30px;
+}
+
+.header_lng {
+  margin-right: 25px;
+}
+
+.header_lng:last-child {
+  margin-right: 18px;
+}
+
+.header_link {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.heder_button_len {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  color: #bdae82;
+}
+
+.heder_button_len:hover,
+.heder_button_len:focus,
+.heder_button_len:active {
+  color: #bdae82;
+}
+
+.header_logo_pic:hover,
+.header_logo_pic:focus,
+.header_logo_pic:active {
+  background: #bdae82;
+}
+
+/* Header styles end*/
+
+/* Alexa Rise styles start*/
+
+.intro {
+  min-height: 100vh;
+  background: url(../img/intro_bgr.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 250px;
+  padding-left: 80px;
+}
+
+.intro_title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+
+.intro_subtitle {
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.serch_form_button {
+  padding: 8px 73px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  background: #bdae82;
+  border: 0px;
+}
+
+.serch_form_button:hover,
+.serch_form_button:focus,
+.serch_form_button:active {
+  color: #ffffff;
+}
+
+/* Alexa Rise styles end*/
+
+/*Skills styles start*/
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.skills {
+  margin: 0 auto;
+  background: #000000;
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+
+.section_title {
+  text-align: center;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  padding: 0 20px;
+}
+
+.line {
+  border-bottom-width: 2px;
+  /* Толщина линии внизу */
+  border-bottom-style: solid;
+  /* Стиль линии внизу */
+  color: #bdae82;
+  width: 274px;
+}
+
+.skills_items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 80px;
+  padding: 0 40px;
+  /* скорее всего 40рх*/
+}
+
+.skills_card {
+  /* grid-column: span 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skills_card_pic {
+  padding-bottom: 50px;
+  max-width: 66.2px;
+}
+
+.skills_card-thumb {
+  display: block;
+}
+
+.skills_card_title {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.skills_card_desc {
+  text-align: center;
+  max-width: 280px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/*Skills styles end*/
+
+/* Portfolio styles start */
+.portfolio {
+  background: #000000;
+  padding-bottom: 100px;
+}
+
+.title_portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.title_portfolio_start {
+  text-align: center;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  padding: 0 20px;
+}
+
+.portfolio_items {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.season_form_button {
+  width: 220px;
+  height: 55px;
+  background: transparent;
+  border: 2px solid #bdae82;
+  color: #bdae82;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.season_form_button:hover,
+.season_form_button:focus,
+.season_form_button:active {
+  color: #000000;
+  border: 2px solid #bdae82;
+  background: #bdae82;
+}
+
+/* Portfolio styles end */
+
+/*Photo portfolio styles start*/
+
+.wrapper_photo {
+  background: #000000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 0 20px;
+}
+
+.photo_full_width {
+  width: 100%;
+}
+
+/*Photo portfolio styles end*/
+
+/* Video portfolio styles start */
+.title_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.title_video_start {
+  text-align: center;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  padding: 0 20px;
+}
+
+.video {
+  background: #000000;
+  padding-bottom: 100px;
+}
+
+.video_basic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  max-height: 705px;
+}
+
+.button_start {
+  position: absolute;
+}
+
+.button_start_img {
+  height: 130px;
+  width: 129.86px;
+}
+
+.button_start_img:hover,
+.button_start_img:focus,
+.button_start_img:active {
+  color: #bdae82;
+}
+
+/* Video portfolio styles end */
+
+/* Price portfolio styles start */
+.price_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.title_price_start {
+  text-align: center;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  padding: 0 20px;
+}
+
+.price {
+  background: #000000;
+  padding-bottom: 100px;
+}
+
+.price_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  padding: 0 20px;
+}
+
+.price_card {
+  /* grid-column: span 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 3px solid #bdae82;
+}
+
+.price_card_title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 56px;
+  padding-top: 43px;
+  padding-bottom: 20px;
+}
+
+.cost {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  color: #bdae82;
+  padding-bottom: 20px;
+}
+
+.price_level {
+  padding: 0px 130px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  padding-bottom: 48px;
+}
+
+.order_shooting {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.order_shooting:hover,
+.order_shooting:focus,
+.order_shooting:active {
+  color: #ffffff;
+}
+
+.order {
+  padding-bottom: 43px;
+}
+
+/* Price portfolio styles end */
+
+/* Contact me styles start*/
+.contact {
+  min-height: 100vh;
+  background: url(../img/contact.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact_title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+}
+.contact_info {
+  max-width: 450px;
+  margin-right: 20px;
+}
+.tel_input,
+.emeil_input {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+  padding: 5px 226px 5px 20px;
+  width: 450px;
+  margin-bottom: 20px;
+}
+.message_input {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+  padding: 5px 20px;
+  width: 450px;
+}
+.placeholder::placeholder {
+  color: #bdae82;
+}
+.message {
+  margin-bottom: 30px;
+}
+
+.message_form_button {
+  padding: 8px 40px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  background: #bdae82;
+  border: 0px;
+  margin-bottom: 195px; /*скорее всего не нужно */
+}
+
+.message_form_button:hover,
+.message_form_button:focus,
+.message_form_button:active {
+  color: #ffffff;
+}
+/* Contact me styles end*/
+
+/* Footer me styles start */
+.footer {
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_item_rs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.link_gh {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+}
+.footer .header_logo_lini {
+  padding-right: 20px;
+}
+.icons_gh {
+  padding-left: 20px;
+}
+/* Footer me styles start */
